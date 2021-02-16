@@ -1,0 +1,68 @@
+.likes-pane {
+    display: none;
+    width: 0%;
+    max-width: 320px;
+    // height: calc(100vh - 83px);
+    height: 100%;
+    background-color: $black-5;
+    position: fixed;
+    top: 83px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+    .inner-pane {
+        padding: 1em;
+        box-sizing: border-box;
+
+        .liked-items {
+            li {
+                margin-bottom: 1em;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+            button {
+                width: 100%;
+                border: 0;
+                padding: 0;
+                background: transparent;
+                // background: pink;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                background-color: $black-1;
+
+                .liked-item__cover {
+                    width: 61px;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .liked-item__title {
+                    width: calc(100% - 61px);
+                    background-color: $black-1;
+                    text-align: left;
+                    padding: 1em;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+
+                    h5 {
+                        color: $white-2;
+                        font-family: $font;
+                        font-weight: 300;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &.active {
+        width: 100%;
+    }
+}

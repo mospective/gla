@@ -1,0 +1,7 @@
+// IE ONLY 
+
+@mixin old-ie {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      @content;
+   }
+  }

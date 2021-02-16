@@ -1,0 +1,18 @@
+//grid
+// For parent elements
+//grid
+@mixin gridstart {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, calc(1468px + 2em)) 1fr;
+  }
+
+  @mixin gridchild {
+    grid-column: 2;
+    padding: 0 2rem;
+    box-sizing: border-box;
+
+    @include mobile {
+      padding: 0 1rem;
+    }
+  }
+

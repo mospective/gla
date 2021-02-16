@@ -1,0 +1,33 @@
+// Components
+@import './styles/components/reset.scss';
+@import './styles/components/grid.scss';
+@import './styles/components/font.scss';
+@import './styles/components/responsive.scss';
+@import './styles/components/legacy.scss';
+@import './styles/components/colors.scss';
+@import './styles/components/animation.scss';
+@import './styles/components/mixins.scss';
+
+
+
+html {
+  
+
+  body {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    @import './styles/layout/header.scss';
+    @import './styles/layout/form-section.scss';
+    @import './styles/layout/games-section.scss';
+    @import './styles/layout/game-details.scss';
+    @import './styles/layout/likes-pane.scss';
+      background-color: $black-3;
+      font-size: 16px;
+      font-family: $font;
+      position: relative;
+
+      &.active {
+        overflow: hidden;
+      }
+      
+  }
+}

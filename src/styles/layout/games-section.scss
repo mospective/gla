@@ -1,0 +1,476 @@
+.games-section {
+    padding: 0 2em 4em 2em;
+    box-sizing: border-box;
+
+    &.hide {
+        display: none;
+    }
+    .inner-container {
+        width: 1500px;
+        max-width: 100%;
+        margin: 0 auto;
+        h2 {
+            color: $white;
+            font-weight: 300;
+            font-size: 1.75em;
+            margin-bottom: 1em;
+            span {
+                font-weight: 500;
+            }
+        }
+
+        // Intro bar 
+
+        .intro-bar {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+
+            .top-pagination {
+                // width: 300px;
+                // max-width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                &__btn {
+                    background-color: transparent;
+                    border: 0;
+                    margin-right: 0.2em;
+                    display: flex;              
+                    
+
+                    svg {
+                        transition: all 0.5s ease-in-out;
+                        transform: rotate(90deg);
+                        fill: $white-2;
+                        width: 30px;
+                        height: 30px;
+                        border: 0;
+                        background-color: $purple-2;
+                        padding: 0.5em;
+                        box-sizing: border-box;
+                        border-radius: 50%;
+                        margin-bottom: 1em;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $purple;
+                        }
+                    }
+                    span {
+                        // display: none;
+                        color: $white-2;
+                        font-size: 1.2em;
+                    }
+
+                    &--prev {
+                        flex-direction: row-reverse;
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                        span {
+                            margin-top: 7px;
+                            margin-right: 1em;
+                        }
+                    }
+
+                    &--next {
+                        svg {
+                            transform: rotate(0deg);
+                        }
+                        span {
+                            margin-top: 7px;
+                            margin-left: 1em;
+                        }
+                        margin-right: 0;
+                    }
+
+                    
+                }
+
+            }
+        }
+
+        // Games
+
+        .grp-cards {
+            .game--cards {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: flex-start;
+
+                min-height: 500px;
+                
+                // Loader
+                .loader {
+                   width:100%;
+                    min-height: 35vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                // Show button container
+                .cta-show {
+                    // background-color: pink;
+                    width: 100%;
+                    height: 35vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    div {
+                        text-align: center;
+                        button {
+                            display: inline-block;
+                            background-color: $purple-2;
+                            color: $white;
+                            font-weight: 300;
+                            text-decoration: none;
+                            font-size: 1.125em;
+                            padding: 0.8em 1.25em;
+                            border-radius: 25px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            text-align: center;
+                            transition: all 0.5s ease-in-out;
+                            border: 0;
+                            appearance: none;
+                            cursor: pointer;
+                            margin-bottom: 1em;
+
+                            &:hover {
+                                background-color: $purple-3;
+                            }
+                        }
+
+                        p {
+                            font-size: 1em;
+                            color: $white-2;
+                        }
+                    }
+                }
+
+                // No results 
+                .no-result {
+                    // background-color: pink;
+                    width:100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .msg {
+                        svg {
+                            max-width: 100%;
+                            width: 180px;
+                            height: 180px;
+                        }
+                        p {
+                            color: $white;
+                            font-size: 1.375em;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+
+                // Game cards
+
+                li {
+                    width: 17.66%;
+                    // max-width: 283px;
+                    margin-right: 2.92%;
+                    margin-bottom: 2em;
+                    .game-card {
+                        .card__img {
+                            position: relative;
+                            margin-bottom: 1em;
+                            overflow: hidden;
+                            img {
+                                max-width: 100%;
+                            }
+        
+                            .overlay__blurb {
+                                // display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 0%;
+                                background-color: rgba($black-1, 0.8);
+                                padding: 0em;
+                                box-sizing: border-box;
+                                transition: all 0.5s ease-in-out;
+                                overflow: hidden;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+        
+                                .content__blurb {
+                                    
+        
+                                    h3 {
+                                        font-weight: 300;
+                                        color: $white;
+                                        margin-bottom: 0.5em;
+                                        font-size: 1.45em;
+                                        text-align: center;
+                                        
+                                        // font-size: 0;
+                                    }
+        
+                                    .cta-btn {
+                                    
+                                        [type="button"] {
+                                            display: inline-block;
+                                            background-color: $purple-2;
+                                            color: $white;
+                                            font-weight: 300;
+                                            text-decoration: none;
+                                            font-size: 1.125em;
+                                            padding: 0.8em 1.25em;
+                                            border-radius: 25px;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            text-align: center;
+                                            transition: all 0.5s ease-in-out;
+        
+                                            &:hover {
+                                                background-color: $purple-3;
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+        
+                                
+        
+                               
+                            }
+        
+                            &:hover {
+                                .overlay__blurb {
+                                    height: 100%;
+                                    padding: 1em;
+                                }
+                            }
+
+                            &.selected {
+                                .overlay__blurb {
+                                    height: 100%;
+                                    padding: 1em;
+                                }
+                            }
+
+                        }
+                        .card__title {
+                            h3 {
+                                font-weight: 300;
+                                color: $white;
+                                line-height: 1.5em;
+                                font-size: 1.375em;
+                            }
+                        }
+                    }
+                    
+    
+                    // &:last-child {
+                    //     margin-right: 0;
+                    // }
+                    &:nth-of-type(5n+5) {
+                        margin-right: 0;
+                    }
+                }
+    
+                @media(max-width:1030px) {
+                    
+    
+                    li{
+                        width: 32%;
+                        margin-right: 1.97%;
+
+                        &:nth-of-type(5n+5) {
+                            margin-right: auto;
+                        }
+    
+                        &:nth-of-type(3n+3) {
+                            margin-right: 0;
+                        }
+                        
+                    }
+                }
+    
+                @include tablet {
+                    justify-content: space-between;
+                    li {
+                        width: 49%;
+                        margin-right: 0 !important;
+                        
+                    }
+                }
+    
+                @include mobile {
+    
+                   li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+
+        // Pagination bottom
+        // .pagination {
+        //     // background-color: skyblue;
+
+        //     .pagination__grp {
+        //         display: flex;
+        //         justify-content: center;
+
+        //         &__btn {
+        //             background-color: transparent;
+        //             border: 0;
+        //             margin-right: 1em;              
+        //             display: flex;
+        //             flex-direction: column;
+
+        //             svg {
+        //                 transition: all 0.5s ease-in-out;
+        //                 transform: rotate(90deg);
+        //                 fill: $white-2;
+        //                 width: 60px;
+        //                 height: 60px;
+        //                 border: 0;
+        //                 background-color: $purple-2;
+        //                 padding: 1em;
+        //                 box-sizing: border-box;
+        //                 border-radius: 50%;
+        //                 margin-bottom: 1em;
+        //                 cursor: pointer;
+
+        //                 &:hover {
+        //                     background-color: $purple;
+        //                 }
+        //             }
+        //             span {
+        //                 display: block;
+        //                 color: $white-2;
+        //                 font-size: 1.2em;
+        //             }
+
+        //             &--prev {
+        //                 svg {
+        //                     transform: rotate(180deg);
+        //                 }
+        //             }
+
+        //             &--next {
+        //                 svg {
+        //                     transform: rotate(0deg);
+        //                 }
+        //             }
+
+                    
+        //         }
+
+        //         // &__next {
+        //         //     border: 0;
+        //         //     background-color: transparent;
+        //         //     margin-left: 1em;
+        //         //     display: flex;
+        //         //     flex-direction: column;
+                                 
+        //         //     svg {
+        //         //         transition: all 0.5s ease-in-out;
+        //         //         fill: $white-2;
+        //         //         width: 60px;
+        //         //         height: 60px;
+        //         //         border: 0;
+        //         //         background-color: $purple-2;
+        //         //         padding: 1em;
+        //         //         box-sizing: border-box;
+        //         //         border-radius: 50%;
+        //         //         margin-bottom: 1em;
+        //         //         cursor: pointer;
+
+        //         //         &:hover {
+        //         //             background-color: $purple;
+        //         //         }
+        //         //     }
+        //         //     span {
+        //         //         display: block;
+        //         //         color: $white-2;
+        //         //         font-size: 1.2em;
+        //         //     }
+        //         // }
+        //     }
+        // }
+
+        .top-pagination {
+            // width: 300px;
+            // max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            &__btn {
+                background-color: transparent;
+                border: 0;
+                margin-right: 0.2em;
+                display: flex;              
+                
+
+                svg {
+                    transition: all 0.5s ease-in-out;
+                    transform: rotate(90deg);
+                    fill: $white-2;
+                    width: 30px;
+                    height: 30px;
+                    border: 0;
+                    background-color: $purple-2;
+                    padding: 0.5em;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    margin-bottom: 1em;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $purple;
+                    }
+                }
+                span {
+                    // display: none;
+                    color: $white-2;
+                    font-size: 1.2em;
+                }
+
+                &--prev {
+                    flex-direction: row-reverse;
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                    span {
+                        margin-top: 7px;
+                        margin-right: 1em;
+                    }
+                }
+
+                &--next {
+                    svg {
+                        transform: rotate(0deg);
+                    }
+                    span {
+                        margin-top: 7px;
+                        margin-left: 1em;
+                    }
+                    margin-right: 0;
+                }
+
+                
+            }
+
+        }
+
+    }
+}

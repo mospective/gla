@@ -1,0 +1,209 @@
+<!DOCTYPE html svg PUBLIC “-//W3C//DTD SVG 1.1//EN”
+“http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd”>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Library App</title>
+</head>
+<body>
+   <header>
+       <div class="inner-header">
+           <div class="logo"><a href="/games-library-app"><h1><span>Games</span> Library App</h1></a></div>
+           <div class="favourites">
+               <span>Favourites</span>
+               <div class="like-holder">
+                <svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="511.626px" height="511.627px" viewBox="0 0 511.626 511.627" style="enable-background:new 0 0 511.626 511.627;" xml:space="preserve"><g><path d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951z"/></g></svg>
+               </div>
+           </div>
+       </div>
+   </header>
+
+   <section class="form-section">
+
+    <form class="search">
+        <input type="text" class="search__field" placeholder="Search for games...">
+        <button class="btn search__btn" type="submit">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612.01px" height="612.01px" viewBox="0 0 612.01 612.01" style="enable-background:new 0 0 612.01 612.01;" xml:space="preserve"><g><g id="_x34__4_"><g><path d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407S377.82,467.8,257.493,467.8z"/></g></g></g></svg>
+        </button>
+    </form>
+
+   </section>
+
+   <section class="games-section">
+       <div class="inner-container">
+        <div class="intro-bar">
+            <h2 class="games-section__title" id="most"><span>Most</span> anticipated games</h2>
+            <div class="top-pagination">
+                <!-- <button class="top-pagination__btn top-pagination__btn--prev">
+                    <svg version="1.1" id="prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.436 407.436" style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve"><polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/></svg>
+                    <span>Page 1</span>
+                </button>
+                <button class="top-pagination__btn top-pagination__btn--next">
+                    <svg version="1.1" id="next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.436 407.436" style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve"><polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/></svg>
+                    <span>Page 2</span>
+                </button> -->
+            </div>
+           </div>
+            <div class="grp-cards">
+                <ul class="game--cards">
+                    <!-- <li>
+                        <div class="game-card">
+                            <div class="card__img">
+                                <div class="overlay__blurb">
+                                    <div class="content__blurb">
+                                        <h3>Cyberpunk 2077</h3>
+                                        <div class="cta-btn">
+                                            <a href="#" type="button">View game</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/Cyberpunk.jpg" alt="text">
+                            </div>
+                            <div class="card__title">
+                                <h3>Cyberpunk 2077</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="game-card">
+                            <div class="card__img">
+                                <div class="overlay__blurb">
+                                    <div class="content__blurb">
+                                        <h3>Marvel Spider-man Miles Morales</h3>
+                                        <div class="cta-btn">
+                                            <a href="#" type="button">View game</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/Spider-man.png" alt="text">
+                            </div>
+                            <div class="card__title">
+                                <h3>Marvel Spider-man Miles Morales</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="game-card">
+                            <div class="card__img">
+                                <div class="overlay__blurb">
+                                    <div class="content__blurb">
+                                        <h3>Asssassin's Creed Valhalla</h3>
+                                        <div class="cta-btn">
+                                            <a href="#" type="button">View game</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/acv-2.jpg" alt="text">
+                            </div>
+                            <div class="card__title">
+                                <h3>Asssassin's Creed Valhalla</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="game-card">
+                            <div class="card__img">
+                                <div class="overlay__blurb">
+                                    <div class="content__blurb">
+                                        <h3>Ghost of Tsushima</h3>
+                                        <div class="cta-btn">
+                                            <a href="#" type="button">View game</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/got.jpg" alt="text">
+                            </div>
+                            <div class="card__title">
+                                <h3>Ghost of Tsushima</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="game-card">
+                            <div class="card__img">
+                                <div class="overlay__blurb">
+                                    <div class="content__blurb">
+                                        <h3>Watch Dogs Legion</h3>
+                                        <div class="cta-btn">
+                                            <a href="#" type="button">View game</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/watch-dogs.jpg" alt="text">
+                            </div>
+                            <div class="card__title">
+                                <h3>Watch Dogs Legion</h3>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="pagination">
+                <div class="pagination__grp">
+                    <!-- <button class="pagination__grp pagination__grp__btn pagination__grp__btn--prev">
+                        <svg version="1.1" id="prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.436 407.436" style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve"><polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/></svg>
+                        <span>Page 1</span>
+                    </button>
+                    <button class="pagination__grp pagination__grp__btn pagination__grp__btn--next">
+                        <svg version="1.1" id="next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.436 407.436" style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve"><polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/></svg>
+                        <span>Page 2</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+   </section>
+
+
+   <section class="game-details">
+       <div class="inner-container" id="game--area">
+           <!-- <div class="gd--card">
+               <div class="grp-col-two">
+                   <div class="text-content">
+                       <div class="blurb">
+                           <h1>Cyberpunk 2077</h1>
+                           <p>Cyberpunk 2077 is a role-playing video game developed and published by CD Projekt. Adapted from the Cyberpunk franchise, the game is an open world, non-linear RPG with an FPS style in which players are able to heavily customize their character to suit their play style. Gun play, exploration, player choice and activities such as hacking are to feature heavily throughout the game with missions, quests and objectives being completed in a variety of different ways. The world will have dynamic weather and a day/night cycle to make it truly immersive.</p>
+                       </div>
+                       <div class="company-container">
+                           <div class="company-logo">
+                               <img src="./img/Logo_CD_Projekt.png" alt="CD Projekt Red">
+                           </div>
+                           <div class="grp-ctas">
+                               <button class="back-btn">Back</button>
+                               <button class="btn-like">
+                                <svg version="1.1" id="heart-clicked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="511.626px" height="511.627px" viewBox="0 0 511.626 511.627" style="enable-background:new 0 0 511.626 511.627;" xml:space="preserve"><g><path d="M475.366,71.951c-24.175-23.606-57.575-35.404-100.215-35.404c-11.8,0-23.843,2.046-36.117,6.136c-12.279,4.093-23.702,9.615-34.256,16.562c-10.568,6.945-19.65,13.467-27.269,19.556c-7.61,6.091-14.845,12.564-21.696,19.414c-6.854-6.85-14.087-13.323-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556c-10.564-6.95-21.985-12.468-34.261-16.562c-12.275-4.089-24.316-6.136-36.116-6.136c-42.637,0-76.039,11.801-100.211,35.404C12.087,95.552,0,128.288,0,170.162c0,12.753,2.24,25.889,6.711,39.398c4.471,13.514,9.566,25.031,15.275,34.546c5.708,9.514,12.181,18.796,19.414,27.837c7.233,9.042,12.519,15.27,15.846,18.699c3.33,3.422,5.948,5.899,7.851,7.419L243.25,469.937c3.427,3.429,7.614,5.144,12.562,5.144s9.138-1.715,12.563-5.137l177.87-171.307c43.588-43.583,65.38-86.41,65.38-128.475C511.626,128.288,499.537,95.552,475.366,71.951z"/></g></svg>
+                                <svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 412.735 412.735" style="enable-background:new 0 0 412.735 412.735;" xml:space="preserve"> <g> <g> <path d="M295.706,35.522C295.706,35.522,295.706,35.522,295.706,35.522c-34.43-0.184-67.161,14.937-89.339,41.273 c-22.039-26.516-54.861-41.68-89.339-41.273C52.395,35.522,0,87.917,0,152.55C0,263.31,193.306,371.456,201.143,375.636 c3.162,2.113,7.286,2.113,10.449,0c7.837-4.18,201.143-110.759,201.143-223.086C412.735,87.917,360.339,35.522,295.706,35.522z M206.367,354.738C176.065,336.975,20.898,242.412,20.898,152.55c0-53.091,43.039-96.131,96.131-96.131 c32.512-0.427,62.938,15.972,80.457,43.363c3.557,4.905,10.418,5.998,15.323,2.44c0.937-0.68,1.761-1.503,2.44-2.44 c29.055-44.435,88.631-56.903,133.066-27.848c27.202,17.787,43.575,48.114,43.521,80.615 C391.837,243.456,236.669,337.497,206.367,354.738z"/> </g> </g> </svg>                           
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="img-content">
+                       <img src="./img/Cyberpunk.jpg" alt="Cyberpunk">
+                   </div>
+               </div>
+              
+           </div> -->
+       </div>
+   </section>
+
+   <aside class="likes-pane">
+    <div class="inner-pane">
+        <ul class="liked-items">
+            <!-- <li>
+                <a href="">
+                    <button>
+                        <div class="liked-item__cover">
+                            <img src="./img/Cyberpunk.jpg" alt="Cyberpunk">
+                        </div>
+                        <div class="liked-item__title">
+                            <h5>Cyberpunk 2077</h5>
+                        </div>
+                    </button>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+   </aside>
+
+</body>
+</html>

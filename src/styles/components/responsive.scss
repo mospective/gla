@@ -1,0 +1,87 @@
+  //mobile screens
+  $mobile: 480px;
+  //>mobile < tablet
+  $phablet: 640px;
+  //small tablet portrait view
+  $tablet: 768px; //768px
+  //tablets and small desktop
+  $small-screen: 992px;
+  //large screens
+  $medium-screen: 1280px;
+  //< screens
+  $large-screen: 1400px;
+  //larger screens
+  $xlarge-screen: 1440px;
+  
+  // Small devices
+  @mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+  }
+  
+  // Phablet size
+  @mixin phablet {
+    @media (max-width: #{$phablet}) {
+        @content;
+    }
+  }
+  
+  // Tablet
+  @mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+  }
+  
+  //  Small Screen
+  @mixin small-screen{
+    @media (max-width: #{$small-screen}) {
+        @content;
+    }
+  }
+  
+  // Extra large devices
+  @mixin medium-screen{
+    @media (max-width: #{$medium-screen}) {
+        @content;
+    }
+  }
+  
+  @mixin large-screen{
+    @media (max-width: #{$large-screen}) {
+        @content;
+    }
+  }
+  
+  @mixin xlarge-screen{
+    @media (min-width: #{$xlarge-screen}) {
+        @content;
+    }
+  }
+  
+  // custom screen
+  @mixin randomSize($screen-screenSize, $minmax-minmax) {
+    @media ($minmax-minmax: $screen-screenSize+'px') {
+        @content;
+    }
+  }
+  
+  
+  @mixin ipad-mini {
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+  }
+  }
+  
+  @mixin ipad-pro {
+    @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+    }
+  }
